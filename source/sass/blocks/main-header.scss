@@ -1,0 +1,66 @@
+.main-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.main-header__container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 103px 0;
+}
+
+.main-header__logo {
+  margin-top: 10px
+}
+
+.main-heder__phone {
+  @extend %alumni-600;
+  max-height: 31px;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: calc(1em / 33.3);
+  color: #ffffff;
+}
+
+.main-heder__phone:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1199.9px) {
+  .main-header__container {
+    padding: 30px 45px 0;
+  }
+
+  .main-header__logo svg {
+    width: 82px;
+    height: 17px;
+  }
+
+  .main-heder__phone {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: calc(1em / 50);
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .main-header__container {
+    padding: 5px 15px 0;
+  }
+
+  .main-header__logo svg {
+    width: 69px;
+    height: 24px;
+  }
+
+  .main-heder__phone {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+}

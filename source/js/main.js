@@ -1,5 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import './modules/play-button';
+import './modules/subscription-tabs';
+import './modules/coaches-slider';
+import './modules/feedback-carousel';
 
 // ---------------------------------
 

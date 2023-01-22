@@ -3,11 +3,11 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper.scss";
+
 
 // Global
 // ---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -20,8 +20,23 @@
 
 @import "blocks/btn";
 @import "blocks/modal";
+@import "blocks/page.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-block.scss";
+@import "blocks/gym.scss";
+@import "blocks/subscriptions.scss";
+@import "blocks/card.scss";
+@import "blocks/promo.scss";
+@import "blocks/coaches.scss";
+@import "blocks/advantages.scss";
+@import "blocks/campains.scss";
+@import "blocks/feedback.scss";
+@import "blocks/contacts.scss";
+@import "blocks/form.scss";
+@import "blocks/main-footer.scss";
 
 // ---------------------------------
+
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 

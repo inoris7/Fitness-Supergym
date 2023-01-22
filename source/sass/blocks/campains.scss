@@ -1,0 +1,253 @@
+.campaigns {
+  background-color: #ffffff;
+}
+
+.campaigns__container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 149px 103px 115px;
+}
+
+.campaingns__subtitle {
+  @extend %alumni-600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.campaigns__content {
+  display: flex;
+}
+
+.campaigns__main-wrapper {
+  display: flex;
+  margin-right: 40px;
+}
+
+.campaigns__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 280px;
+  background-color:#ED0233;
+  color: #ffffff;
+  padding: 33px 45px 45px;
+  @extend %roboto-700;
+}
+
+.campaigns__main-subtitle-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.campaigns__main-subtitle {
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.campaigns__main-price {
+  display: inline-block;
+  font-size: 70px;
+  line-height: 65px;
+  margin-bottom: 22px;
+}
+
+.campaigns__main-description {
+  display: inline-block;
+  @extend %roboto-400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.campaigns__main-link {
+  display: inline-block;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.campaigns__main-pic {
+  flex-shrink: 0;
+}
+
+.campaigns__cards {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  row-gap: 40px;
+}
+
+.campaigns__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @extend %roboto-700;
+  color: #1C3374;
+  box-sizing: border-box;
+  border: 7px solid;
+  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) 1;
+  padding: 28px;
+  flex-grow: 1;
+}
+
+.campaigns__card-subtitle {
+  margin: 0;
+  font-size: 26px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.campaigns__card-description {
+  @extend %roboto-400;
+  font-size: 16px;
+  line-height: 1em;
+}
+
+.campaigns__card-link {
+  display: inline-block;
+  width: fit-content;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color:#1C3374;
+  border-bottom: 1px solid #1C3374;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 1199.9px) {
+  .campaigns__container {
+    padding: 85px 45px 92px;
+  }
+
+  .campaingns__subtitle {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .campaigns__content {
+    flex-direction: column;
+  }
+
+  .campaigns__main-wrapper {
+    width: 100%;
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .campaigns__main-text {
+    max-width: 279px;
+  }
+
+  .campaigns__main-pic {
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  .campaingns__img {
+    min-width: 399px;
+    min-height: 462px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .campaigns__cards {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    row-gap: unset;
+    column-gap: 30px;
+  }
+
+  .campaigns__card {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .campaigns__card-subtitle-wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .campaigns__container {
+    padding: 57px 15px 67px;
+  }
+
+  .campaingns__subtitle {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 42px;
+  }
+
+  .campaigns__main-wrapper {
+    flex-direction: column;
+  }
+
+  .campaigns__main-text {
+    max-width: unset;
+    align-items: center;
+    text-align: center;
+  }
+
+  .campaigns__main-price {
+    margin-bottom: 18px;
+  }
+
+  .campaigns__main-description {
+    margin-bottom: 30px;
+  }
+
+  .campaingns__img {
+    min-width: 290px;
+    min-height: 299px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .campaigns__cards {
+    flex-direction: column;
+    row-gap: 30px;
+    column-gap: unset;
+  }
+
+  .campaigns__card {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 37px 28px 40px;
+  }
+
+  .campaigns__card-subtitle {
+    margin-bottom: 15px;
+  }
+
+  .campaigns__card-subtitle-wrapper {
+    margin-bottom: 25px;
+  }
+}
+
+
+
+

@@ -1,0 +1,161 @@
+.subscriptions {
+  background-color: #F8F9FC;
+  // overflow-y: visible;
+}
+
+.subscriptions__container {
+  position: relative;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 120px 103px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.subscriptions__subtitle {
+  margin: 0;
+  @extend %alumni-600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: calc(1em / 33.3);
+}
+
+.subscriptions__tabs-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.subscriptions__tabs-item {
+    margin-right: 46px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.subscriptions__tabs-item--active {
+  border-bottom: 2px solid #D10A42;
+}
+
+.subscriptions__tabs-item--active .subscriptions__tab {
+  color: #102654;
+}
+
+.subscriptions__tab {
+  @extend %roboto-400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+  border: none;
+  padding: 0;
+  margin-bottom: 12px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.subscriptions__group-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.subscriptions__group--hidden {
+  display: none;
+}
+
+.subscriptions__cards {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 39px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+
+.subscriptions__backgroud-pic {
+  transform: rotate(-210deg);
+  position: absolute;
+  bottom: -95px;
+  right: -108px;
+}
+
+@media (max-width: 1199.9px) {
+  .subscriptions__container {
+    padding: 100px 163px;
+  }
+
+  .subscriptions__subtitle {
+    font-size: 42px;
+    line-height: 50px;
+    margin-right: 12px;
+  }
+
+  .subscriptions__tabs-list {
+    margin-top: 20px;
+  }
+
+  .subscriptions__tabs-item {
+    margin-right: 54px;
+  }
+
+  .subscriptions__cards {
+    margin-top: 39px;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: unset;
+    row-gap: 40px;
+  }
+
+  .subscriptions__tab {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .subscriptions__backgroud-pic {
+    width: 289px;
+    height: 345px;
+    bottom: -75px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .subscriptions__container {
+    padding: 63px 15px;
+  }
+
+  .subscriptions__subtitle {
+    font-size: 32px;
+    line-height: 38px;
+    margin-right: 12px;
+  }
+
+  .subscriptions__tabs-item {
+    margin-right: 45px;
+  }
+
+  .subscriptions__tab {
+
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .subscriptions__backgroud-pic {
+    display: none;
+  }
+
+}

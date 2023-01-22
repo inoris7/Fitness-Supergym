@@ -1,0 +1,124 @@
+.main-footer {
+  flex: 0 0 auto;
+  background-color: #030A1A;
+}
+
+.main-footer__container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 44px 103px 32px ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer__logo {
+  display: block;
+  margin-right: 15px;
+  height: 18px;
+}
+
+.main-footer__list, .main-footer__social-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.main-footer__list {
+  column-gap: 40px;
+}
+
+.main-footer__link {
+  color: #ffffff;
+  @extend %roboto-400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main-footer__social-link {
+  position: relative;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 5px solid #030A1A;
+}
+
+@media (max-width: 1199.9px) {
+  .main-footer__container {
+    padding: 37px 45px 45px;
+    align-items: center;
+  }
+
+  .main-footer__logo {
+    margin-right: 20px;
+  }
+
+  .main-footer__logo svg {
+    width: 82px;
+    height: 18px;
+  }
+
+  .main-footer__list {
+    column-gap: 30px;
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .main-footer__container {
+    position: relative;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main-footer__logo {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+  }
+
+  .main-footer__logo svg {
+    width: 68px;
+    height: 15px;
+  }
+
+  .main-footer__nav {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .main-footer__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    row-gap: 17px;
+    margin-top: 0;
+  }
+
+  .main-footer__item:first-of-type {
+    grid-row-start: 2;
+  }
+
+  .main-footer__link {
+    font-size: 16px;
+    line-height: 12px;
+  }
+
+  .main-footer__social-list {
+    align-self: flex-start;
+    margin-left: -5px;
+  }
+}
+
+
