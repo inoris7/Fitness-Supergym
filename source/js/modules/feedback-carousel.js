@@ -4,7 +4,7 @@ const feedbackSwiper = document.querySelector('.feedback__swiper');
 if (feedbackSection && feedbackSwiper) {
   const feedbackCarousel = new Swiper('.feedback__swiper', {
 
-    loop: true,
+    loop: false,
 
     slidesPerView: 1,
     spaceBetween: 0,
