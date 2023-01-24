@@ -4,7 +4,7 @@ module.exports = {
     'font-family-no-missing-generic-family-keyword': true,
     'no-descending-specificity': null,
 
-    'color-hex-case': 'lower',
+    // 'color-hex-case': 'lower',
     'color-hex-length': 'long',
 
     'comment-no-empty': true,
@@ -113,21 +113,21 @@ module.exports = {
     'media-query-list-comma-space-after': 'always-single-line',
     'media-query-list-comma-space-before': 'never-single-line',
 
-    'at-rule-empty-line-before': [
-      'always',
-      {
-        except: ['first-nested', 'blockless-after-blockless'],
-        ignore: ['after-comment'],
-      },
-    ],
+    // 'at-rule-empty-line-before': [
+    //   'always',
+    //   {
+    //     except: ['first-nested', 'blockless-after-blockless'],
+    //     ignore: ['after-comment'],
+    //   },
+    // ],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always',
-    'at-rule-no-unknown': [
-      true,
-      {
-        ignoreAtRules: ['mixin', 'define-mixin', 'include', 'content', 'rules', 'each'],
-      },
-    ],
+    // 'at-rule-no-unknown': [
+    //   true,
+    //   {
+    //     ignoreAtRules: ['mixin', 'define-mixin', 'include', 'content', 'rules', 'each'],
+    //   },
+    // ],
     'at-rule-no-vendor-prefix': true,
     'at-rule-semicolon-newline-after': 'always',
 

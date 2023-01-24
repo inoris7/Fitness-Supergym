@@ -10,6 +10,7 @@
 }
 
 .advantages__subtitle {
+
   @extend %alumni-600;
   font-size: 54px;
   line-height: 65px;
@@ -60,6 +61,7 @@
 
 .advantages__item-value {
   display: inline-block;
+
   @extend %roboto-700;
   font-size: 71px;
   line-height: 55px;
@@ -70,6 +72,7 @@
 
 .advantages_-item-name {
   display: inline-block;
+
   @extend %roboto-400;
   font-size: 14px;
   line-height: 21px;
@@ -78,6 +81,7 @@
 }
 
 .advantages__item-subtitle {
+
   @extend %roboto-700;
   font-size: 22px;
   line-height: 22px;
@@ -188,7 +192,7 @@
 
 @media (max-width: 767.9px) {
   .advantages__container {
-    padding: 70px 0px;
+    padding: 70px 0;
   }
 
   .advantages__subtitle {

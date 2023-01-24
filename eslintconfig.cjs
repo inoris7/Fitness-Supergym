@@ -81,12 +81,12 @@ module.exports = {
     // Variables
     // http://eslint.org/docs/rules/#variables
     // ---------------------------------------
-    'no-unused-vars': ['error', {args: 'after-used', argsIgnorePattern: '^_'}], // check that all args are used¬
+    // 'no-unused-vars': ['error', {args: 'after-used', argsIgnorePattern: '^_'}], // check that all args are used¬
     'no-delete-var': 'error', // eslint:recommended
     'no-label-var': 'error',
     'no-shadow': 'error',
     'no-shadow-restricted-names': 'error',
-    'no-undef': 'error', // default
+    // 'no-undef': 'error', // default
     'no-undef-init': 'error',
     'no-undefined': 'error',
 

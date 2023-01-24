@@ -31,6 +31,7 @@
 .promo__subtitle {
   max-width: 201px;
   margin: 0;
+
   @extend %alumni-600;
   font-size: 82px;
   line-height: 79px;
@@ -55,6 +56,7 @@
 
 .promo__date-name {
   display: inline-block;
+
   @extend %roboto-400;
   font-size: 18px;
   line-height: 27px;
@@ -64,6 +66,7 @@
 .promo__date-value {
   width: fit-content;
   display: flex;
+
   @extend %roboto-700;
   font-size: 40px;
   line-height: 50px;
@@ -71,6 +74,7 @@
 }
 
 .promo__date-value span {
+
   @extend %roboto-400;
   font-size: 14px;
   line-height: 18px;
@@ -79,6 +83,7 @@
 }
 
 .promo__slogan {
+
   @extend %roboto-400;
   display: block;
   font-size: 18px;
@@ -88,6 +93,7 @@
 
 .promo__request-button {
   width: 100%;
+
   @extend %roboto-700;
   font-size: 12px;
   line-height: 14px;

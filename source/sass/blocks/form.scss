@@ -2,10 +2,11 @@
   width: 50%;
   background-color: #102654;
   color: #ffffff;
-  padding: 70px 0 70px 103px ;
+  padding: 70px 0 70px 103px;
 }
 
 .form__subtitle {
+
   @extend %alumni-800;
   font-size: 54px;
   line-height: 54px;
@@ -38,8 +39,10 @@
   border-bottom: 1px solid #74819C;
   padding: 0;
   padding-bottom: 5px;
+  color: #ffffff;
 
   &::placeholder {
+
     @extend %roboto-400;
     font-size: 14px;
     line-height: 16px;
@@ -49,6 +52,7 @@
 
 .form__submit-button {
   width: 410px;
+
   @extend %roboto-700;
   font-size: 14px;
   line-height: 16px;
@@ -70,7 +74,7 @@
 @media (max-width: 1199.9px) {
   .form {
     width: 100%;
-    padding: 63px 163px 70px 133px ;
+    padding: 63px 163px 70px 133px;
   }
 
   .form__subtitle {

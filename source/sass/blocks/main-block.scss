@@ -27,6 +27,7 @@
 .main-block__city {
   display: inline-block;
   width: 135px;
+
   @extend %alumni-600;
   font-size: 40px;
   line-height: 58px;
@@ -54,6 +55,7 @@
 
 .main-block__link {
   display: block;
+
   @extend %roboto-400;
   font-size: 14px;
   line-height: 21px;
@@ -68,6 +70,7 @@
 
 .main-block__subtitle {
   max-width: 250px;
+
   @extend %alumni-800;
   font-size: 92px;
   line-height: 110px;
@@ -82,6 +85,7 @@
 .main-block__sell-button {
   display: block;
   background-color: transparent;
+
   @extend %roboto-700;
   font-size: 12px;
   line-height: 14px;

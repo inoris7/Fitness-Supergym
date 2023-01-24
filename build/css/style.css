@@ -1758,6 +1758,7 @@ button,
   line-height: 1.4em;
   color: #102654;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .page__main-container {
@@ -2071,7 +2072,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .subscriptions__subtitle {
@@ -3091,6 +3091,7 @@ coaches__swiper-wrapper {
   border-bottom: 1px solid #74819C;
   padding: 0;
   padding-bottom: 5px;
+  color: #ffffff;
 }
 
 .form__fields input::-webkit-input-placeholder {

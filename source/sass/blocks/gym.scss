@@ -21,6 +21,7 @@
 }
 
 .gym__subtitle {
+
   @extend %alumni-600;
   font-size: 48px;
   line-height: 58px;
@@ -30,6 +31,7 @@
 
 .gym__slogan {
   display: block;
+
   @extend %roboto-400;
   font-size: 18px;
   line-height: 27px;
@@ -64,13 +66,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url(../img/video-background-desktop.webp);
+  background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("../img/video-background-desktop.webp");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 3;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url(../img/video-background-desktop@2x.webp);
+    background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("../img/video-background-desktop@2x.webp");
     background-size: cover;
   }
 }
@@ -107,7 +109,7 @@
 
   &:focus {
     outline: 3px solid #ffffff;
-    outline-offset: 2px ;
+    outline-offset: 2px;
   }
 }
 
@@ -142,7 +144,7 @@
     margin: 34px 88px 0;
 
     &:last-of-type {
-     display: none;
+      display: none;
     }
   }
 

@@ -16,6 +16,7 @@
 }
 
 .contacts__subtitle {
+
   @extend %alumni-600;
   font-size: 54px;
   line-height: 54px;
@@ -65,12 +66,16 @@
 }
 
 .contacts__item-name {
+
   @extend %roboto-700;
   color: #102654;
   margin-bottom: 5px;
 }
 
-.contacts__item-link, .contacts__item-value, .contacts__item-link address {
+.contacts__item-link,
+.contacts__item-value,
+.contacts__item-link address {
+
   @extend %roboto-400;
   font-size: 14px;
   font-style: normal;
@@ -162,5 +167,4 @@
     line-height: 26px;
     margin-bottom: 40px;
   }
-
 }

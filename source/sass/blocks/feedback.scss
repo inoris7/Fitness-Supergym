@@ -8,6 +8,7 @@
 }
 
 .feedback__subtitle {
+
   @extend %alumni-600;
   margin: 0;
   margin-left: 5px;
@@ -27,7 +28,7 @@
   width: 560px;
   color: #ffffff;
   padding: 62px 62px 57px;
-  box-shadow: 0px 0px 40px 0px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
   display: grid;
   grid-template-columns: 80px 1fr;
   grid-template-rows: fit-content 1fr;
@@ -42,6 +43,7 @@
 
 .feedback__card-name {
   margin: 0;
+
   @extend %roboto-700;
   font-size: 20px;
   line-height: 15px;
@@ -49,6 +51,7 @@
 
 .feedback__card-text {
   margin: 0;
+
   @extend %roboto-400;
   font-size: 16px;
   line-height: 22px;
@@ -70,7 +73,7 @@
 
 .feedback__button-next {
   transform: rotate(180deg);
-  right: calc(50% - 335px);;
+  right: calc(50% - 335px);
 }
 
 .swiper-button-disabled {
@@ -142,7 +145,6 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin-left: 41px;
-
   }
 
   .feedback__card-img {
@@ -154,7 +156,6 @@
     font-size: 20px;
     line-height: 26px;
     margin-top: 8px;
-
   }
 
   .feedback__card-text {
@@ -179,6 +180,6 @@
   }
 
   .feedback__button-next {
-    right: calc(50% - 145px);;
+    right: calc(50% - 145px);
   }
 }

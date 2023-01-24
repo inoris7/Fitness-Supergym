@@ -14,10 +14,11 @@
 }
 
 .main-header__logo {
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .main-heder__phone {
+
   @extend %alumni-600;
   max-height: 31px;
   font-size: 26px;
