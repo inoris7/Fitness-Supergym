@@ -2870,7 +2870,7 @@ button,
 }
 
 .feedback__container {
-  padding: 0 0 95px;
+  padding: 0 0 120px;
   position: relative;
 }
 
@@ -2934,7 +2934,7 @@ button,
   height: 32px;
   background-image: url("../img/svg/slider-button.svg");
   position: absolute;
-  top: calc(50% - 35px);
+  top: calc(50% - 25px);
   z-index: 10;
 }
 
@@ -3052,7 +3052,7 @@ button,
   line-height: 54px;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
 }
 
 .form__contacts {
@@ -3084,6 +3084,7 @@ button,
   background-color: transparent;
   border-bottom: 1px solid #74819C;
   padding: 0;
+  padding-top: 5px;
   padding-bottom: 5px;
   color: #ffffff;
 }
@@ -3174,6 +3175,10 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   row-gap: 10px;
+}
+
+.main-footer__social-list {
+  margin-right: -5px;
 }
 
 .main-footer__list {
@@ -3310,10 +3315,12 @@ button,
     line-height: 41px;
     letter-spacing: 0.1em;
     text-align: center;
+    margin-right: 3px;
   }
 
   .main-block__list {
     margin-bottom: 20px;
+    margin-right: 5px;
   }
 
   .main-block__subtitle {
@@ -3341,7 +3348,7 @@ button,
     line-height: 14px;
     padding: 20px 32px;
     margin-top: 37px;
-    margin-right: -5px;
+    margin-right: 0;
   }
 
   .gym__container {
@@ -3565,6 +3572,10 @@ button,
     margin-right: 5px;
   }
 
+  .coaches__card-text-wrapper {
+    margin-right: 7px;
+  }
+
   .coaches__qual-list {
     margin: 0 40px 0 72px;
   }
@@ -3674,6 +3685,7 @@ button,
     font-size: 42px;
     line-height: 50px;
     margin-bottom: 40px;
+    margin-right: 7px;
   }
 
   .campaigns__content {
@@ -3742,7 +3754,8 @@ button,
 
   .feedback__subtitle {
     margin-left: 0;
-    margin-bottom: 50px;
+    margin-right: 3px;
+    margin-bottom: 38px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -3828,6 +3841,9 @@ button,
   .contacts__item-value,
   .contacts__item-link address {
     font-size: 18px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .form {
@@ -3947,6 +3963,7 @@ button,
 
   .main-block__list {
     margin-bottom: 28px;
+    margin-right: 0;
   }
 
   .main-block__subtitle {
@@ -4120,6 +4137,10 @@ button,
 
   .coaches__card-overlay {
     padding: 52px 0 40px;
+  }
+
+  .coaches__card-text-wrapper {
+    margin-right: 0;
   }
 
   .coaches__qual-list {
@@ -4498,6 +4519,7 @@ button,
     -ms-flex-item-align: start;
     align-self: flex-start;
     margin-left: -5px;
+    margin-right: 0;
   }
 }
 

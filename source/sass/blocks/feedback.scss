@@ -3,7 +3,7 @@
 }
 
 .feedback__container {
-  padding: 0 0 95px;
+  padding: 0 0 120px;
   position: relative;
 }
 
@@ -63,7 +63,7 @@
   height: 32px;
   background-image: url("../img/svg/slider-button.svg");
   position: absolute;
-  top: calc(50% - 35px);
+  top: calc(50% - 25px);
   z-index: 10;
 }
 
@@ -87,7 +87,8 @@
 
   .feedback__subtitle {
     margin-left: 0;
-    margin-bottom: 50px;
+    margin-right: 3px;
+    margin-bottom: 38px;
     font-size: 42px;
     line-height: 50px;
   }
