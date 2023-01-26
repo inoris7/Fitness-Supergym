@@ -123,6 +123,9 @@
 
   .promo__content-wrapper {
     padding: 51px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .promo__subtitle-wrapper {
@@ -167,6 +170,7 @@
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 30px;
+    justify-self: flex-start;
   }
 
   .promo__request-button {
@@ -188,7 +192,7 @@
 
 @media (max-width: 767.9px) {
   .promo__container {
-    padding: 80px 15px 60px;
+    padding: 70px 15px 60px;
     flex-direction: column;
   }
 

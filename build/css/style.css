@@ -2163,8 +2163,8 @@ button,
   position: relative;
   width: 100%;
   background-color: #ffffff;
-  padding-top: 124.4444444444%;
   z-index: 2;
+  height: 448px;
 }
 
 .card__content {
@@ -2190,8 +2190,10 @@ button,
 }
 
 .card__content:hover {
-  padding: 56px 0;
+  padding: 58px 0;
   border: 7px solid;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   -o-border-image: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%) 1;
   border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) 1;
 }
@@ -2202,10 +2204,11 @@ button,
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
   outline: none;
   border: none;
+  padding: 27px 47px 29px;
 }
 
 .card__content:focus-within {
-  padding: 56px 0;
+  padding: 58px 0;
   border: 7px solid;
   -o-border-image: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%) 1;
   border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) 1;
@@ -2217,6 +2220,7 @@ button,
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
   outline: none;
   border: none;
+  padding: 27px 47px 29px;
 }
 
 .card__subtitle {
@@ -2958,21 +2962,25 @@ button,
 
 .contacts {
   background-color: #ffffff;
-}
-
-.contacts__container {
-  max-width: 1366px;
-  margin-left: auto;
-  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contacts__wrapper {
-  width: 50%;
-  padding: 60px 0 28px 120px;
+.contacts__container {
   border-top: 1px solid #74819C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.contacts__wrapper {
+  max-width: 683px;
+  padding: 60px 0 28px 0;
+  padding-left: min(120px, 17.6%);
+  background-color: #ffffff;
+  margin-right: auto;
 }
 
 .contacts__subtitle {
@@ -3044,10 +3052,22 @@ button,
 }
 
 .form {
-  width: 50%;
+  width: 100%;
   background-color: #102654;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.form__contacts {
+  max-width: 683px;
   color: #ffffff;
   padding: 70px 0 70px 103px;
+  padding-right: min(170px, 24.9%);
 }
 
 .form__subtitle {
@@ -3056,12 +3076,6 @@ button,
   letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 28px;
-}
-
-.form__contacts {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .form__fields {
@@ -3438,7 +3452,7 @@ button,
   }
 
   .subscriptions__container {
-    padding: 100px 163px;
+    padding: 100px 165px 105px;
   }
 
   .subscriptions__subtitle {
@@ -3477,10 +3491,6 @@ button,
     right: -10px;
   }
 
-  .card {
-    padding-top: 101.8181818182%;
-  }
-
   .card__price {
     margin-top: 35px;
     color: #103AAE;
@@ -3491,16 +3501,22 @@ button,
     padding: 65px 0 65px;
   }
 
-  .card__order-button {
-    padding: 25px 45px 25px;
-  }
-
   .promo__container {
     padding: 97px 45px;
   }
 
   .promo__content-wrapper {
     padding: 51px 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .promo__subtitle-wrapper {
@@ -3545,6 +3561,7 @@ button,
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 30px;
+    justify-self: flex-start;
   }
 
   .promo__request-button {
@@ -3575,6 +3592,10 @@ button,
     text-align: center;
     margin-bottom: 31px;
     margin-right: 5px;
+  }
+
+  .coaches__swiper {
+    width: 566px;
   }
 
   .coaches__card-text-wrapper {
@@ -3790,17 +3811,22 @@ button,
     right: calc(50% - 340px);
   }
 
-  .contacts__container {
+  .contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 
+  .contacts__container {
+    border-top: none;
+  }
+
   .contacts__wrapper {
     width: 100%;
     padding: 70px 179px 65px 133px;
-    border-top: none;
+    max-width: unset;
+    margin: 0;
   }
 
   .contacts__list {
@@ -3853,17 +3879,18 @@ button,
 
   .form {
     width: 100%;
-    padding: 63px 163px 70px 133px;
+  }
+
+  .form__contacts {
+    max-width: unset;
+    width: 100%;
+    padding: 65px 163px 68px 133px;
   }
 
   .form__subtitle {
     font-size: 42px;
     line-height: 50px;
     margin-bottom: 33px;
-  }
-
-  .form__contacts {
-    width: 100%;
   }
 
   .form__fields {
@@ -4066,16 +4093,37 @@ button,
     margin-bottom: 12px;
   }
 
+  .subscriptions__cards {
+    row-gap: 36px;
+  }
+
   .subscriptions__backgroud-pic {
     display: none;
   }
 
   .card {
-    padding-top: 130.3448275862%;
+    height: 384px;
   }
 
   .card__content {
-    padding: 45px 0 53px;
+    padding: 45px 0 59px;
+    max-height: 384px;
+  }
+
+  .card__content:hover {
+    padding: 38px 0 50px;
+  }
+
+  .card__content:hover .card__order-button {
+    padding: 27px 47px 29px;
+  }
+
+  .card__content:focus-within {
+    padding: 38px 0 52px;
+  }
+
+  .card__content:focus-within .card__order-button {
+    padding: 27px 47px 29px;
   }
 
   .card__subtitle {
@@ -4106,7 +4154,7 @@ button,
   }
 
   .promo__container {
-    padding: 80px 15px 60px;
+    padding: 70px 15px 60px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4131,6 +4179,10 @@ button,
 
   .coaches__container {
     padding: 5px 47px 65px;
+  }
+
+  .coaches__swiper {
+    width: 226px;
   }
 
   .coaches__subtitle {
@@ -4332,7 +4384,7 @@ button,
   }
 
   .feedback__swiper {
-    width: unset;
+    width: 226px;
   }
 
   .feedback__card {
@@ -4398,7 +4450,7 @@ button,
 
   .contacts__wrapper {
     width: 100%;
-    padding: 70px 15px 65px;
+    padding: 70px 15px 64px;
   }
 
   .contacts__list {
@@ -4430,7 +4482,7 @@ button,
     margin-bottom: 40px;
   }
 
-  .form {
+  .form__contacts {
     padding: 70px 15px;
   }
 
@@ -4445,7 +4497,7 @@ button,
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
-    row-gap: 35px;
+    row-gap: 30px;
     margin-bottom: 36px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4525,6 +4577,13 @@ button,
     align-self: flex-start;
     margin-left: -5px;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 1199.9px) and (min-width: 900px) {
+  .gym__video {
+    width: 440px;
+    height: 264px;
   }
 }
 

@@ -95,7 +95,7 @@
 
 @media (max-width: 1199.9px) {
   .subscriptions__container {
-    padding: 100px 163px;
+    padding: 100px 165px 105px;
   }
 
   .subscriptions__subtitle {
@@ -148,10 +148,13 @@
   }
 
   .subscriptions__tab {
-
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 12px;
+  }
+
+  .subscriptions__cards {
+    row-gap: 36px;
   }
 
   .subscriptions__backgroud-pic {

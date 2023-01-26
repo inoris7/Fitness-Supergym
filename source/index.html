@@ -21,7 +21,7 @@
         <div class="main-header__container">
           <a class="main-header__logo">
             <svg width="119" height="23" fill="#ffffff">
-              <use href="../img/sprite.svg#main-logo-icon"></use>
+              <use href="./img/sprite.svg#main-logo-icon"></use>
             </svg>
           </a>
           <a class="main-heder__phone" href="tel:88005555555">
@@ -263,20 +263,22 @@
         <section class="promo">
           <div class="promo__container">
             <div class="promo__content-wrapper">
-              <div class="promo__subtitle-wrapper">
-                <h2 class="promo__subtitle">SUPER GAMES</h2>
-                <ul class="promo__date-list">
-                  <li class="promo__date-item">
-                    <span class="promo__date-name">Дата</span>
-                    <span class="promo__date-value">7 <span>Марта<br>2019</span></span>
-                  </li>
-                  <li class="promo__date-item">
-                    <span class="promo__date-name">Время</span>
-                    <span class="promo__date-value">12:00</span>
-                  </li>
-                </ul>
+              <div class="promo__content-text">
+                <div class="promo__subtitle-wrapper">
+                  <h2 class="promo__subtitle">SUPER GAMES</h2>
+                  <ul class="promo__date-list">
+                    <li class="promo__date-item">
+                      <span class="promo__date-name">Дата</span>
+                      <span class="promo__date-value">7 <span>Марта<br>2019</span></span>
+                    </li>
+                    <li class="promo__date-item">
+                      <span class="promo__date-name">Время</span>
+                      <span class="promo__date-value">12:00</span>
+                    </li>
+                  </ul>
+                </div>
+                <span class="promo__slogan">Ежегодные соревнования по CrossFit</span>
               </div>
-              <span class="promo__slogan">Ежегодные соревнования по CrossFit</span>
               <a class="promo__request-button" href="#">заполнить заявку</a>
             </div>
 
@@ -635,28 +637,28 @@
         </section>
 
         <section class="contacts">
-          <div class="contacts__container">
-            <h2 class="visually-hidden">Контакты и бесплатное занятие</h2>
-            <div class="contacts__form form">
+
+          <h2 class="visually-hidden">Контакты и бесплатное занятие</h2>
+          <div class="contacts__form form">
+            <form class="form__contacts" action="https://echo.htmlacademy.ru/" method="post">
               <h3 class="form__subtitle">Бесплатное занятие </h3>
+              <fieldset class="form__fields">
+                <label>
+                  <span class="visually-hidden">Поле имя</span>
+                  <input type="text" name="customer-name" placeholder="Имя" pattern="[a-zA-Zа-яА-ЯёЁ -]+" minlength="1" required>
+                </label>
 
-              <form class="form__contacts" action="https://echo.htmlacademy.ru/" method="post">
-                <fieldset class="form__fields">
-                  <label>
-                    <span class="visually-hidden">Поле имя</span>
-                    <input type="text" name="customer-name" placeholder="Имя" pattern="[a-zA-Zа-яА-ЯёЁ -]+" minlength="1" required>
-                  </label>
-
-                  <label>
-                    <span class="visually-hidden">Поле телефон</span>
-                    <input type="tel" name="phone-number" placeholder="Телефон" pattern="^[^A-Za-zА-Яа-яЁё]+$" required>
-                  </label>
-                </fieldset>
-                <button class="form__submit-button">
-                  отправить
-                </button>
-              </form>
-            </div>
+                <label>
+                  <span class="visually-hidden">Поле телефон</span>
+                  <input type="tel" name="phone-number" placeholder="Телефон" pattern="^[^A-Za-zА-Яа-яЁё]+$" required>
+                </label>
+              </fieldset>
+              <button class="form__submit-button">
+                отправить
+              </button>
+            </form>
+          </div>
+          <div class="contacts__container">
             <div class="contacts__wrapper">
               <h3 class="contacts__subtitle">Контакты</h3>
               <ul class="contacts__list">
@@ -697,7 +699,7 @@
         <div class="main-footer__container">
           <a class="main-footer__logo">
             <svg width="88" height="32" fill="#ffffff">
-              <use href="../img/sprite.svg#main-logo-icon"></use>
+              <use href="./img/sprite.svg#main-logo-icon"></use>
             </svg>
           </a>
           <nav class="main-footer__nav">
@@ -734,7 +736,7 @@
               <a class="main-footer__social-link" href="#">
                 <span class="visually-hidden">Страница Вконтакте</span>
                 <svg width="12" height="7" fill="#030A1A">
-                  <use href="../img/sprite.svg#vk-icon"></use>
+                  <use href="./img/sprite.svg#vk-icon"></use>
                 </svg>
               </a>
             </li>
@@ -742,7 +744,7 @@
               <a class="main-footer__social-link" href="#">
                 <span class="visually-hidden">Страница на Одноклассниках</span>
                 <svg width="9" height="16" fill="#030A1A">
-                  <use href="../img/sprite.svg#ok-icon"></use>
+                  <use href="./img/sprite.svg#ok-icon"></use>
                 </svg>
               </a>
             </li>
@@ -750,7 +752,7 @@
               <a class="main-footer__social-link" href="#">
                 <span class="visually-hidden">Страница на Реддит</span>
                 <svg width="14" height="14" fill="#030A1A">
-                  <use href="../img/sprite.svg#reddit-icon"></use>
+                  <use href="./img/sprite.svg#reddit-icon"></use>
                 </svg>
               </a>
             </li>

@@ -150,6 +150,10 @@
     margin-right: 5px;
   }
 
+  .coaches__swiper {
+    width: 566px;
+  }
+
   .coaches__card-text-wrapper {
     margin-right: 7px;
   }
@@ -176,6 +180,10 @@
 @media (max-width: 767.9px) {
   .coaches__container {
     padding: 5px 47px 65px;
+  }
+
+  .coaches__swiper {
+    width: 226px;
   }
 
   .coaches__subtitle {

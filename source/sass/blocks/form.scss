@@ -1,22 +1,25 @@
 .form {
-  width: 50%;
+  width: 100%;
   background-color: #102654;
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.form__contacts {
+  max-width: 683px;
   color: #ffffff;
   padding: 70px 0 70px 103px;
+  padding-right: min(170px, 24.9%);
 }
 
 .form__subtitle {
-
   @extend %alumni-800;
   font-size: 54px;
   line-height: 54px;
   letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 28px;
-}
-
-.form__contacts {
-  width: fit-content;
 }
 
 .form__fields {
@@ -75,17 +78,18 @@
 @media (max-width: 1199.9px) {
   .form {
     width: 100%;
-    padding: 63px 163px 70px 133px;
+  }
+
+  .form__contacts {
+    max-width: unset;
+    width: 100%;
+    padding: 65px 163px 68px 133px;
   }
 
   .form__subtitle {
     font-size: 42px;
     line-height: 50px;
     margin-bottom: 33px;
-  }
-
-  .form__contacts {
-    width: 100%;
   }
 
   .form__fields {
@@ -104,7 +108,7 @@
 }
 
 @media (max-width: 767.9px) {
-  .form {
+  .form__contacts {
     padding: 70px 15px;
   }
 
@@ -117,7 +121,7 @@
 
   .form__fields {
     column-gap: 0;
-    row-gap: 35px;
+    row-gap: 30px;
     margin-bottom: 36px;
     display: flex;
     flex-direction: column;
