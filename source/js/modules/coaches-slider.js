@@ -5,7 +5,6 @@ if (coachesSection && coachesSwiper) {
   const coachesSlider = new Swiper('.coaches__swiper', {
 
     loop: true,
-    autoHeight: true,
 
     breakpoints: {
       1200: {

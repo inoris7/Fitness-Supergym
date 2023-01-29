@@ -30,6 +30,9 @@
 
 .main-footer__social-list {
   margin-right: -5px;
+  width: 110px;
+  margin-left: 20px;
+  flex-shrink: 0;
 }
 
 .main-footer__list {
@@ -105,15 +108,16 @@
   .main-footer__list {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, fit-content);
+    grid-auto-flow: row;
     row-gap: 17px;
     margin-top: 0;
   }
 
-  .main-footer__item:first-of-type {
-    grid-row-start: 2;
+  .main-footer__item:first-child {
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .main-footer__link {

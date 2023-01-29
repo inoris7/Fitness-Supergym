@@ -3,7 +3,7 @@ const feedbackSwiper = document.querySelector('.feedback__swiper');
 
 if (feedbackSection && feedbackSwiper) {
   const feedbackCarousel = new Swiper('.feedback__swiper', {
-
+    autoHeight: true,
     loop: false,
 
     slidesPerView: 1,

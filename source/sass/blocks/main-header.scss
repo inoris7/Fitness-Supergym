@@ -15,6 +15,12 @@
 
 .main-header__logo {
   margin-top: 10px;
+  margin-right: 10px;
+}
+
+.main-header__contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-heder__phone {
@@ -25,6 +31,8 @@
   line-height: 31px;
   letter-spacing: calc(1em / 33.3);
   color: #ffffff;
+  min-width: 154px;
+  margin-left: 10px;
 }
 
 .main-heder__phone:hover {

@@ -14,12 +14,13 @@
 
 .promo__content-wrapper {
   background-color: #ED0233;
-  padding: 0 78px;
+  padding: 20px 78px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
   align-self: stretch;
+  max-width: 500px;
 }
 
 .promo__subtitle-wrapper {
@@ -111,10 +112,14 @@
 
 .promo__pic {
   display: block;
-  width: fit-content;
-  height: fit-content;
   background-color: #003D85;
+  align-self: stretch;
 }
+
+.promo__img {
+  height: 100%;
+}
+
 
 @media (max-width: 1199.9px) {
   .promo__container {
@@ -126,10 +131,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: unset;
   }
 
   .promo__subtitle-wrapper {
     margin-bottom: 5px;
+    justify-content: space-between;
   }
 
   .promo__subtitle {

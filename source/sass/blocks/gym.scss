@@ -53,8 +53,12 @@
   top: 408px;
   left: calc(50% - 143px);
 
-  @media (max-width: 1279.9px) {
-    left: calc(50% - 103px);
+  @media (max-width: 1323.9px) {
+    left: calc(50% - 83px);
+  }
+
+  @media (max-width: 1249.9px) {
+    left: calc(50% - 63px);
   }
 }
 

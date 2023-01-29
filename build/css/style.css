@@ -1788,6 +1788,15 @@ button,
 
 .main-header__logo {
   margin-top: 10px;
+  margin-right: 10px;
+}
+
+.main-header__contacts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .main-heder__phone {
@@ -1796,6 +1805,8 @@ button,
   line-height: 31px;
   letter-spacing: 0.03003003em;
   color: #ffffff;
+  min-width: 154px;
+  margin-left: 10px;
 }
 
 .main-heder__phone:hover {
@@ -2148,6 +2159,7 @@ button,
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
+  row-gap: 40px;
 }
 
 .subscriptions__backgroud-pic {
@@ -2295,7 +2307,7 @@ button,
 
 .promo__content-wrapper {
   background-color: #ED0233;
-  padding: 0 78px;
+  padding: 20px 78px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2312,6 +2324,7 @@ button,
   -ms-flex-item-align: stretch;
   -ms-grid-row-align: stretch;
   align-self: stretch;
+  max-width: 500px;
 }
 
 .promo__subtitle-wrapper {
@@ -2404,13 +2417,14 @@ button,
 
 .promo__pic {
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   background-color: #003D85;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+}
+
+.promo__img {
+  height: 100%;
 }
 
 .coaches {
@@ -2490,6 +2504,7 @@ button,
 }
 
 .coaches__card-overlay {
+  overflow: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2511,6 +2526,10 @@ button,
   background-color: rgba(16, 38, 84, 0.89);
   padding: 58px 0 50px;
   z-index: -1;
+}
+
+.coaches__card-overlay::-webkit-scrollbar {
+  width: 0;
 }
 
 .coaches__card-name,
@@ -2595,17 +2614,22 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 240px 1fr;
   grid-template-columns: 1fr 240px 1fr;
-  -ms-grid-rows: (1fr)[2];
-  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: (-webkit-fit-content)[2];
+  -ms-grid-rows: (fit-content)[2];
+  grid-template-rows: repeat(2, -webkit-fit-content);
+  grid-template-rows: repeat(2, fit-content);
   -webkit-column-gap: 60px;
   -moz-column-gap: 60px;
   column-gap: 60px;
+  row-gap: 15px;
 }
 
 .advantages__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  padding-bottom: 15px;
 }
 
 .advantages__item--main {
@@ -2628,13 +2652,17 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .advantages__item--bottom {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  border-top: 2px solid rgba(209, 10, 66, 0.2);
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .advantages__item-value-wrapper {
@@ -2791,6 +2819,7 @@ button,
   text-transform: uppercase;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
+  margin-top: 20px;
 }
 
 .campaigns__main-link:hover {
@@ -2801,6 +2830,10 @@ button,
   -ms-flex-negative: 0;
   flex-shrink: 0;
   background-color: #0041CA;
+}
+
+.campaingns__img {
+  height: 100%;
 }
 
 .campaigns__cards {
@@ -2841,6 +2874,8 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  max-width: 560px;
+  min-height: 211px;
 }
 
 .campaigns__card-subtitle {
@@ -2980,7 +3015,6 @@ button,
   padding: 60px 0 28px 0;
   padding-left: min(120px, 17.6%);
   background-color: #ffffff;
-  margin-right: auto;
 }
 
 .contacts__subtitle {
@@ -2998,23 +3032,21 @@ button,
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 230px 230px;
-  grid-template-columns: 230px 230px;
-  -ms-grid-rows: -webkit-min-content -webkit-min-content;
-  -ms-grid-rows: min-content min-content;
-  grid-template-rows: -webkit-min-content -webkit-min-content;
-  grid-template-rows: min-content min-content;
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
+  -ms-grid-columns: (230px)[2];
+  grid-template-columns: repeat(2, 230px);
+  grid-template-columns: repeat(auto-fill, 1fr);
   grid-auto-flow: column;
+  -webkit-column-gap: 100px;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+  row-gap: 15px;
 }
 
 .contacts__list::after {
   content: "";
   position: absolute;
   top: 5px;
-  left: calc(50% - 48px);
+  left: calc(50% + 35px);
   width: 1px;
   height: calc(100% - 10px);
   background-color: #74819C;
@@ -3030,12 +3062,12 @@ button,
   margin-right: -5px;
 }
 
-.contacts__item--bottom {
-  padding-bottom: 0;
-}
-
 .contacts__item--right {
   margin-left: 23px;
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
 }
 
 .contacts__item-name {
@@ -3196,6 +3228,10 @@ button,
 
 .main-footer__social-list {
   margin-right: -5px;
+  width: 110px;
+  margin-left: 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .main-footer__list {
@@ -3275,6 +3311,12 @@ button,
   }
 }
 
+@media (max-width: 1323.9px) {
+  .gym__video-container {
+    left: calc(50% - 83px);
+  }
+}
+
 @media (max-width: 1299.9px) {
   .coaches__card-overlay {
     padding: 35px 0 35px;
@@ -3285,9 +3327,9 @@ button,
   }
 }
 
-@media (max-width: 1279.9px) {
+@media (max-width: 1249.9px) {
   .gym__video-container {
-    left: calc(50% - 103px);
+    left: calc(50% - 63px);
   }
 }
 
@@ -3517,10 +3559,14 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    max-width: unset;
   }
 
   .promo__subtitle-wrapper {
     margin-bottom: 5px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .promo__subtitle {
@@ -3594,8 +3640,18 @@ button,
     margin-right: 5px;
   }
 
-  .coaches__swiper {
-    width: 566px;
+  .coaches__card {
+    position: relative;
+    padding-top: 48.5074626866%;
+    min-height: 294px;
+  }
+
+  .coaches__card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .coaches__card-text-wrapper {
@@ -3610,9 +3666,14 @@ button,
     padding: 58px 0 50px;
   }
 
+  .coaches__card-pic {
+    width: 100%;
+    height: 100%;
+  }
+
   .coaches__card-img {
-    width: 268px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
   }
 
   .coaches__button-prev,
@@ -3632,14 +3693,21 @@ button,
   }
 
   .advantages__list {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 239px 1fr;
-    grid-template-rows: 1fr 239px 1fr;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: -webkit-fit-content 239px -webkit-fit-content;
+    -ms-grid-rows: fit-content 239px fit-content;
+    grid-template-rows: -webkit-fit-content 239px -webkit-fit-content;
+    grid-template-rows: fit-content 239px fit-content;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
     row-gap: 40px;
+  }
+
+  .advantages__item {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
   .advantages__item--main {
@@ -3764,10 +3832,14 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
+    row-gap: 30px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .campaigns__card {
     width: calc((100% - 30px) / 2);
+    max-width: unset;
   }
 
   .campaigns__card-subtitle-wrapper {
@@ -3836,7 +3908,7 @@ button,
 
   .contacts__list::after {
     top: 8px;
-    left: calc(50% + 38px);
+    left: calc(50% + 60px);
     height: calc(100% - 15px);
     background-color: #74819C;
   }
@@ -4181,15 +4253,16 @@ button,
     padding: 5px 47px 65px;
   }
 
-  .coaches__swiper {
-    width: 226px;
-  }
-
   .coaches__subtitle {
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 40px;
     margin-right: 5px;
+  }
+
+  .coaches__card {
+    padding-top: 121.2389380531%;
+    min-height: 274px;
   }
 
   .coaches__card-overlay {
@@ -4202,11 +4275,6 @@ button,
 
   .coaches__qual-list {
     margin: 0 20px 0 50px;
-  }
-
-  .coaches__card-img {
-    width: 226px;
-    height: 274px;
   }
 
   .coaches__button-prev {
@@ -4553,18 +4621,20 @@ button,
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-flow: column;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, -webkit-fit-content);
+    grid-template-rows: repeat(auto-fit, fit-content);
+    grid-auto-flow: row;
     row-gap: 17px;
     margin-top: 0;
   }
 
-  .main-footer__item:first-of-type {
-    -ms-grid-row: 2;
-    grid-row-start: 2;
+  .main-footer__item:first-child {
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
   }
 
   .main-footer__link {

@@ -7,11 +7,11 @@
     <meta name="description" content="Сайт фитнес-центра Supergym">
     <title>Фитнес-центр Supergym</title>
     <link rel="preload" href="./js/main.min.js" as="script">
-    <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/AlumniSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -24,9 +24,11 @@
               <use href="./img/sprite.svg#main-logo-icon"></use>
             </svg>
           </a>
-          <a class="main-heder__phone" href="tel:88005555555">
-            8-800-555-55-55
-          </a>
+          <div class="main-header__contacts-wrapper">
+            <a class="main-heder__phone" href="tel:88005555555">
+              8-800-555-55-55
+            </a>
+          </div>
         </div>
       </header>
       <main class="page__main-container">
@@ -300,7 +302,7 @@
                     <h3 class="coaches__card-subtitle">
                       Анна Павлова
                     </h3>
-                    <picture>
+                    <picture class="coaches__card-pic">
                       <img class="coaches__card-img" width="260" height="294" src="./img/coach-card-1.webp" srcset="./img/coach-card-1@2x.webp 2x" alt="Тренер.">
                     </picture>
                     <div class="coaches__card-overlay">
@@ -321,7 +323,7 @@
                     <h3 class="coaches__card-subtitle">
                       Алексей Лавров
                     </h3>
-                    <picture>
+                    <picture class="coaches__card-pic">
                       <img class="coaches__card-img" width="260" height="294" src="./img/coach-card-2.webp" srcset="./img/coach-card-2@2x.webp 2x" alt="Тренер.">
                     </picture>
                     <div class="coaches__card-overlay">
@@ -342,7 +344,7 @@
                     <h3 class="coaches__card-subtitle">
                       Александр Пашков
                     </h3>
-                    <picture>
+                    <picture class="coaches__card-pic">
                       <img class="coaches__card-img" width="260" height="294" src="./img/coach-card-3.webp" srcset="./img/coach-card-3@2x.webp 2x" alt="Тренер.">
                     </picture>
                     <div class="coaches__card-overlay">
@@ -363,7 +365,7 @@
                     <h3 class="coaches__card-subtitle">
                       Мария Кетова
                     </h3>
-                    <picture>
+                    <picture class="coaches__card-pic">
                       <img class="coaches__card-img" width="260" height="294" src="./img/coach-card-4.webp" srcset="./img/coach-card-4@2x.webp 2x" alt="Тренер.">
                     </picture>
                     <div class="coaches__card-overlay">
@@ -384,7 +386,7 @@
                     <h3 class="coaches__card-subtitle">
                       Анна Павлова
                     </h3>
-                    <picture>
+                    <picture class="coaches__card-pic">
                       <img class="coaches__card-img" width="260" height="294" src="./img/coach-card-1.webp" srcset="./img/coach-card-1@2x.webp 2x" alt="Тренер.">
                     </picture>
                     <div class="coaches__card-overlay">
@@ -405,7 +407,7 @@
                     <h3 class="coaches__card-subtitle">
                       Алексей Лавров
                     </h3>
-                    <picture>
+                    <picture class="coaches__card-pic">
                       <img class="coaches__card-img" width="260" height="294" src="./img/coach-card-2.webp" srcset="./img/coach-card-2@2x.webp 2x" alt="Тренер.">
                     </picture>
                     <div class="coaches__card-overlay">
@@ -426,7 +428,7 @@
                     <h3 class="coaches__card-subtitle">
                       Александр Пашков
                     </h3>
-                    <picture>
+                    <picture class="coaches__card-pic">
                       <img class="coaches__card-img" width="260" height="294" src="./img/coach-card-3.webp" srcset="./img/coach-card-3@2x.webp 2x" alt="Тренер.">
                     </picture>
                     <div class="coaches__card-overlay">
@@ -447,7 +449,7 @@
                     <h3 class="coaches__card-subtitle">
                       Мария Кетова
                     </h3>
-                    <picture>
+                    <picture class="coaches__card-pic">
                       <img class="coaches__card-img" width="260" height="294" src="./img/coach-card-4.webp" srcset="./img/coach-card-4@2x.webp 2x" alt="Тренер.">
                     </picture>
                     <div class="coaches__card-overlay">
@@ -499,7 +501,8 @@
                     Собственная парковка
                   </h3>
                   <p class="advantages__item-description">
-                    Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке                  </p>
+                    Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке
+                  </p>
                 </div>
               </li>
               <li class="advantages__item advantages__item--main">
@@ -603,7 +606,8 @@
                     Нравится, что в&nbsp;клубе всегда чисто,
                     тренажеры обновляют, персонал дружелюбный.
                     Зал просторный, даже в&nbsp;вечернее
-                    время нет очередей&raquo;</p>
+                    время нет очередей&raquo;
+                  </p>
                 </div>
                 <div class="swiper-slide feedback__card">
                   <picture class="feedback__card-pic">
@@ -615,7 +619,8 @@
                     Нравится, что в&nbsp;клубе всегда чисто,
                     тренажеры обновляют, персонал дружелюбный.
                     Зал просторный, даже в&nbsp;вечернее
-                    время нет очередей&raquo;</p>
+                    время нет очередей&raquo;
+                  </p>
                 </div>
                 <div class="swiper-slide feedback__card">
                   <picture class="feedback__card-pic">
@@ -627,7 +632,8 @@
                     Нравится, что в&nbsp;клубе всегда чисто,
                     тренажеры обновляют, персонал дружелюбный.
                     Зал просторный, даже в&nbsp;вечернее
-                    время нет очередей&raquo;</p>
+                    время нет очередей&raquo;
+                  </p>
                 </div>
               </div>
             </div>
@@ -689,6 +695,7 @@
                     omsk@supergym.ru
                   </a>
                 </li>
+
               </ul>
             </div>
           </div>

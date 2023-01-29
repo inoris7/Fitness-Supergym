@@ -77,6 +77,7 @@
   text-transform: uppercase;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
+  margin-top: 20px;
 
   &:hover {
     opacity: 0.7;
@@ -86,6 +87,10 @@
 .campaigns__main-pic {
   flex-shrink: 0;
   background-color: #0041CA;
+}
+
+.campaingns__img {
+  height: 100%;
 }
 
 .campaigns__cards {
@@ -110,6 +115,8 @@
   border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) 1;
   padding: 28px;
   flex-grow: 1;
+  max-width: 560px;
+  min-height: 211px;
 }
 
 .campaigns__card-subtitle {
@@ -186,10 +193,13 @@
     flex-direction: row;
     row-gap: unset;
     column-gap: 30px;
+    row-gap: 30px;
+    flex-wrap: wrap;
   }
 
   .campaigns__card {
     width: calc((100% - 30px) / 2);
+    max-width: unset;
   }
 
   .campaigns__card-subtitle-wrapper {

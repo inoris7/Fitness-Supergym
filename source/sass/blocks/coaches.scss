@@ -66,6 +66,7 @@
 }
 
 .coaches__card-overlay {
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,6 +79,10 @@
   background-color: rgba(16, 38, 84, 0.89);
   padding: 58px 0 50px;
   z-index: -1;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 
   @media (max-width: 1299.9px) {
     padding: 35px 0 35px;
@@ -150,9 +155,20 @@
     margin-right: 5px;
   }
 
-  .coaches__swiper {
-    width: 566px;
+  .coaches__card {
+    position: relative;
+    padding-top: calc(130 / 268 * 100%);
+    min-height: 294px;
   }
+
+  .coaches__card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 
   .coaches__card-text-wrapper {
     margin-right: 7px;
@@ -166,9 +182,14 @@
     padding: 58px 0 50px;
   }
 
+  .coaches__card-pic {
+    width: 100%;
+    height: 100%;
+  }
+
   .coaches__card-img {
-    width: 268px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
   }
 
   .coaches__button-prev,
@@ -182,15 +203,16 @@
     padding: 5px 47px 65px;
   }
 
-  .coaches__swiper {
-    width: 226px;
-  }
-
   .coaches__subtitle {
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 40px;
     margin-right: 5px;
+  }
+
+  .coaches__card {
+    padding-top: calc(274 / 226 * 100%);
+    min-height: 274px;
   }
 
   .coaches__card-overlay {
@@ -203,11 +225,6 @@
 
   .coaches__qual-list {
     margin: 0 20px 0 50px;
-  }
-
-  .coaches__card-img {
-    width: 226px;
-    height: 274px;
   }
 
   .coaches__button-prev {
