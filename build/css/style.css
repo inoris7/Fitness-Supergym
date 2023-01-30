@@ -1993,6 +1993,11 @@ button,
   margin-top: 10px;
 }
 
+.gym__picture-wrapper {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
 .gym__video-container {
   position: absolute;
   top: 408px;
@@ -2447,7 +2452,7 @@ button,
   margin-bottom: 48px;
 }
 
-.coaches__card {
+.swiper-slide {
   color: #ffffff;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -2901,6 +2906,7 @@ button,
   text-transform: uppercase;
   color: #1C3374;
   border-bottom: 1px solid #1C3374;
+  margin-top: 15px;
 }
 
 .campaigns__card-link:hover {
@@ -2976,7 +2982,7 @@ button,
   height: 32px;
   background-image: url("../img/svg/slider-button.svg");
   position: absolute;
-  top: calc(50% - 25px);
+  top: 205px;
   z-index: 10;
 }
 
@@ -3034,11 +3040,10 @@ button,
   display: grid;
   -ms-grid-columns: (230px)[2];
   grid-template-columns: repeat(2, 230px);
-  grid-template-columns: repeat(auto-fill, 1fr);
-  grid-auto-flow: column;
-  -webkit-column-gap: 100px;
-  -moz-column-gap: 100px;
-  column-gap: 100px;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  -webkit-column-gap: 60px;
+  -moz-column-gap: 60px;
+  column-gap: 60px;
   row-gap: 15px;
 }
 
@@ -3046,7 +3051,7 @@ button,
   content: "";
   position: absolute;
   top: 5px;
-  left: calc(50% + 35px);
+  left: 230px;
   width: 1px;
   height: calc(100% - 10px);
   background-color: #74819C;
@@ -3057,17 +3062,7 @@ button,
 }
 
 .contacts__item {
-  padding-bottom: 15px;
   margin-left: 5px;
-  margin-right: -5px;
-}
-
-.contacts__item--right {
-  margin-left: 23px;
-  -ms-grid-column: 2;
-  grid-column-start: 2;
-  -ms-grid-column-span: 1;
-  grid-column-end: 3;
 }
 
 .contacts__item-name {
@@ -3093,6 +3088,9 @@ button,
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .form__contacts {
@@ -3642,8 +3640,8 @@ button,
 
   .coaches__card {
     position: relative;
-    padding-top: 48.5074626866%;
-    min-height: 294px;
+    padding-top: 109.7014925373%;
+    max-height: 294px;
   }
 
   .coaches__card-content {
@@ -3667,6 +3665,8 @@ button,
   }
 
   .coaches__card-pic {
+    -o-object-fit: cover;
+    object-fit: cover;
     width: 100%;
     height: 100%;
   }
@@ -3674,6 +3674,8 @@ button,
   .coaches__card-img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .coaches__button-prev,
@@ -3872,7 +3874,7 @@ button,
 
   .feedback__button-prev,
   .feedback__button-next {
-    top: calc(50% - 18px);
+    top: 190px;
   }
 
   .feedback__button-prev {
@@ -3902,30 +3904,24 @@ button,
   }
 
   .contacts__list {
-    -ms-grid-columns: (minmax(230px, 1fr))[2];
-    grid-template-columns: repeat(2, minmax(230px, 1fr));
+    -ms-grid-columns: (230px)[2];
+    grid-template-columns: repeat(2, 230px);
+    -webkit-column-gap: 80px;
+    -moz-column-gap: 80px;
+    column-gap: 80px;
   }
 
   .contacts__list::after {
     top: 8px;
-    left: calc(50% + 60px);
+    left: 265px;
     height: calc(100% - 15px);
     background-color: #74819C;
   }
 
   .contacts__item {
     width: 100%;
-    padding-bottom: 23px;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .contacts__item--bottom {
-    padding-bottom: 0;
-  }
-
-  .contacts__item--right {
-    margin-left: 44px;
   }
 
   .contacts__subtitle {
@@ -4502,7 +4498,7 @@ button,
 
   .feedback__button-prev,
   .feedback__button-next {
-    top: calc(50% - 4px);
+    top: 235px;
     width: 10px;
     height: 19px;
     background-size: cover;
@@ -4540,8 +4536,10 @@ button,
     padding-bottom: 0;
   }
 
-  .contacts__item--right {
-    margin-left: 0;
+  .contacts__item:nth-of-type(2n) {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
   }
 
   .contacts__subtitle {

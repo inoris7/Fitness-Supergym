@@ -63,7 +63,7 @@
   height: 32px;
   background-image: url("../img/svg/slider-button.svg");
   position: absolute;
-  top: calc(50% - 25px);
+  top: 205px;
   z-index: 10;
 }
 
@@ -105,7 +105,7 @@
 
   .feedback__button-prev,
   .feedback__button-next {
-    top: calc(50% - 18px);
+    top: 190px;
   }
 
   .feedback__button-prev {
@@ -170,7 +170,7 @@
 
   .feedback__button-prev,
   .feedback__button-next {
-    top: calc(50% - 4px);
+    top: 235px;
     width: 10px;
     height: 19px;
     background-size: cover;
